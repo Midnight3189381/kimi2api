@@ -38,10 +38,6 @@
 ### 2. 下载项目
 
 使用 Git 克隆本仓库：
-```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
-```
 或者直接下载 `main.py` 文件。
 
 ### 3. 安装依赖
@@ -67,12 +63,8 @@ pip install "fastapi[all]" httpx python-dotenv
 **如何获取 Bearer Token？**
 1.  登录 [Kimi Chat 官网](https://kimi.moonshot.cn/)。
 2.  打开浏览器开发者工具（通常是按 `F12`）。
-3.  切换到 “网络 (Network)” 标签页。
-4.  随便发送一条消息。
-5.  在网络请求列表中，找到名为 `completion` 或 `stream` 的请求。
-6.  点击该请求，在 “标头 (Headers)” 中找到 “请求标头 (Request Headers)”。
-7.  复制 `authorization` 字段的完整值，它以 `Bearer ` 开头。将整个值粘贴到 `.env` 文件中。
-8.  Token 有时效性，如果服务无法工作，请优先检查 Token 是否已过期。
+3.  切换到 “应用程序” 标签页。
+4.  找到cookie的kimi-auth值
 
 ### 5. 运行服务
 
